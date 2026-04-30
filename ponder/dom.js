@@ -23,7 +23,7 @@ para.classList.add('background');
 //document.querySelector('body').classList.add('background');
 
 const image = document.querySelector('img');
-image.setAttribute('src', 'images/web.png');
+image.setAttribute('src', 'https://commons.wikimedia.org/wiki/File:Components_of_a_Web_Page.png');
 
 
 
