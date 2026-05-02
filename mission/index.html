@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="BYU Idaho Mission Statement">
-    <meta name="author" content="Dulio Delgado">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Statement</title>
-    <link href="index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="BYU Idaho Mission Statement">
+  <meta name="author" content="Dulio Delgado">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Statement</title>
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div id="content">
 
-        <h1>MISSION STATEMENT</h1>
-        <h2 class="subtitle">BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
+  <!-- Theme Selector -->
+  <select>
+    <option>Choose Mode</option>
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+  </select>
 
-        <hr>
+  <div id="content">
+    <h1>MISSION STATEMENT</h1>
+    <h2 class="subtitle">BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
+    <hr>
 
-        <p id="intro">
-            Brigham Young University-Idaho was founded and is supported and guided by 
-            The Church of Jesus Christ of Latter-day Saints. Its mission is to develop 
-            disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
-        </p>
+    <p id="intro">
+      Brigham Young University-Idaho was founded and is supported and guided by
+      The Church of Jesus Christ of Latter-day Saints. Its mission is to develop
+      disciples of Jesus Christ who are leaders in their homes, the Church, and
+      their communities.
+    </p>
 
-        <p class="italic">The university does this by:</p>
+    <p class="italic">The university does this by:</p>
 
-        <ol id="list">
-            <li>
-                Building testimonies of the restored gospel of Jesus Christ and fostering 
-                its principles in a wholesome academic, cultural, and social environment.
-            </li>
-            <li>
-                
-                Providing a high-quality education that prepares students of diverse interests 
-                and abilities for lifelong learning and employment.
-            </li>
-            <li>
-                Serving as many students as possible within resource constraints.
-            </li>
-            <li>
-                Delivering education that is affordable for students and the Church.
-            </li>
-        </ol>
+    <ol id="list">
+      <li>Building testimonies of the restored gospel of Jesus Christ.</li>
+      <li>Providing a high-quality education.</li>
+      <li>Serving as many students as possible.</li>
+      <li>Delivering education that is affordable.</li>
+    </ol>
 
-        <!-- LOGO --> 
+    <!-- LOGO -->
+    <img src="images/byui-logo-blue.webp"
+         alt="BYU Idaho logo"
+         class="logo">
+  </div>
 
-        <img src="https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp" 
-        alt="BYU IDAHO university logo" class="logo">
-    </div>
+  <!-- JavaScript -->
+  <script>
+    let selectElem = document.querySelector('select');
+    let logo = document.querySelector('img');
+    let content = document.querySelector('#content');
+
+    selectElem.addEventListener('change', changeTheme);
+
+    function changeTheme() {
+      let current = selectElem.value;
+
+      if (current == 'dark') {
+        document.body.style.backgroundColor = '#1e1e1e';
+        document.body.style.color = 'white';
+
+        content.style.backgroundColor = '#2b2b2b';
+        content.style.borderColor = '#555';
+
+        logo.src = 'images/byui-logo-white.png';
+
+      } else {
+        document.body.style.backgroundColor = '#e6e6e6';
+        document.body.style.color = 'black';
+
+        content.style.backgroundColor = 'white';
+        content.style.borderColor = 'lightgray';
+
+        logo.src = 'images/byui-logo-blue.webp';
+      }
+    }
+  </script>
+
 </body>
 </html>

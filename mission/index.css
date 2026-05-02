@@ -1,71 +1,76 @@
 body {
-    background-color: #e6e6e6;
-    font-family: Georgia, 'Times New Roman', serif;
+  background-color: #e6e6e6;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
+/* Theme Selector */
+select {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+}
+
+/* Content*/
 #content {
-    max-width: 60%;
-    background-color: white;
-    border: 1px solid lightgray;
-    margin: 40px auto;
-    padding: 60px;
-    text-align: center;
+  max-width: 60%;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 40px auto;
+  padding: 60px;
+  text-align: center;
 }
 
 /* Title */
 h1 {
-    font-size: 2.5em;
-    letter-spacing: 3px;
-    font-weight: normal;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  font-weight: normal;
 }
 
 .subtitle {
-    color: #2a6fa5;
-    font-size: 1em;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+  color: #2a6fa5;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
 }
 
 /* Line */
 hr {
-    width: 80%;
-    margin: 10px auto;
-    height: 1px;
-    background-color: lightgray;
-    border: none;
+  width: 80%;
+  margin: 10px auto;
+  height: 1px;
+  background-color: lightgray;
+  border: none;
 }
 
 /* Text */
 #intro {
-    width: 80%;
-    margin: 20px auto;
-    line-height: 1.6em;
-    text-align: left;
-    margin-top: 40px;
+  width: 80%;
+  margin: 20px auto;
+  line-height: 1.6em;
+  text-align: left;
+  margin-top: 40px;
 }
 
 .italic {
-    font-style: italic;
-    margin-top: 30px;
-    text-align: left;
-    width: 80%; 
-    margin: 20px auto;
+  font-style: italic;
+  text-align: left;
+  width: 80%;
+  margin: 20px auto;
 }
 
 /* List */
 #list {
-    text-align: left;
-    width: 70%;
-    margin: 20px auto;
-    line-height: 1.6em;
-}
-#list li {
-    margin-bottom: 15px;
+  text-align: left;
+  width: 70%;
+  margin: 20px auto;
+  line-height: 1.6em;
 }
 
- /* LOGO */
+/* Logo */
 .logo {
-    width: 140px;
-    display: block;
-    margin: 60px auto 0 auto;
+  width: 140px;
+  display: block;
+  margin: 60px auto 0 auto;
 }
