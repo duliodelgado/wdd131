@@ -18,6 +18,7 @@ header {
 
 h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .menu-button {
@@ -33,13 +34,14 @@ h1 {
 
 nav {
     display: none;
+    margin-top: 0.5rem;
 }
 
 nav a {
-    display: block;
     color: white;
     text-decoration: none;
     padding: 0.5rem;
+    display: block;
 }
 
 nav a:hover {
@@ -85,7 +87,7 @@ footer {
     margin-top: 1rem;
 }
 
-/* TABLET VIEW */
+/* TABLET */
 
 @media screen and (min-width: 700px) {
 
@@ -94,7 +96,7 @@ footer {
     }
 }
 
-/* DESKTOP VIEW */
+/* DESKTOP */
 
 @media screen and (min-width: 1000px) {
 
