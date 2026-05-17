@@ -30,10 +30,12 @@ gallery.addEventListener("click", (e) => {
   modal.showModal();
 });
 
-closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   modal.close();
 });
 
+// close modal if clicking outside the image
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.close();
