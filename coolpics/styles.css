@@ -40,10 +40,16 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px;
     display: block;
-    border-bottom: 1px solid white;
-}    
+    border-bottom: 1px solid transparent;
+}  
+
+
+av a span {
+  border-bottom: 1px solid white;
+}
+
 
 nav a:hover {
     text-decoration: underline;
