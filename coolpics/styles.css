@@ -40,9 +40,10 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 10px;
     display: block;
-}
+    border-bottom: 1px solid white;
+}    
 
 nav a:hover {
     text-decoration: underline;
