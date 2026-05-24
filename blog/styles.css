@@ -1,0 +1,106 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Main container */
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Book card */
+.book-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.book-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Book content */
+.book-info {
+    padding: 1.5rem;
+}
+
+.book-info h2 {
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Button */
+button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+
+    border: none;
+    background-color: #222;
+    color: white;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+
+/* Button accessibility */
+button:hover,
+button:focus {
+    background-color: #444;
+    outline: 3px solid #88c0ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+
+    .book-card {
+        grid-template-columns: 300px 1fr;
+    }
+
+}
