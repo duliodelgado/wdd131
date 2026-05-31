@@ -1,11 +1,13 @@
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* Page */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
@@ -13,7 +15,6 @@ body {
     padding: 2rem;
 }
 
-/* Main container */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -22,53 +23,65 @@ body {
 }
 
 /* Header */
+
 header {
     text-align: center;
     padding-top: 1.5rem;
 }
 
 header h1 {
-    font-size: 2.2rem;
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
     color: #3a2230;
     margin-bottom: 1rem;
 }
 
-/* Navigation */
 .menu {
+    list-style: none;
+
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    list-style: none;
+
+    padding: 1rem 2rem;
+
     border-top: 1px solid #d6a56d;
     border-bottom: 1px solid #d6a56d;
-    padding: 1rem 2rem;
 }
 
 .menu a {
     text-decoration: none;
     color: #a0001c;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .menu a:hover,
 .menu a:focus {
     text-decoration: underline;
-    outline: none;
 }
 
-/* Main grid layout */
-.blog-layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 2rem;
+/* Articles */
+
+#articles-container {
     padding: 2rem;
 }
 
-/* Left column */
+.article {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+}
+
 .book-details {
     text-align: right;
+
     border-right: 1px solid #d6a56d;
+
     padding-right: 1.5rem;
+
     line-height: 2;
 }
 
@@ -79,54 +92,69 @@ header h1 {
 
 .stars {
     color: goldenrod;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
-/* Right column */
+.book-content {
+    padding-left: 1rem;
+}
+
 .book-content h2 {
     color: #a0001c;
-    margin-bottom: 1rem;
+    font-family: Georgia, serif;
     font-size: 2rem;
+
+    margin-bottom: 1rem;
 }
 
 .book-content img {
     width: 220px;
     display: block;
-    margin-bottom: 1rem;
+
+    margin: 0 auto 1rem auto;
 }
 
 .book-content p {
-    max-width: 500px;
+    max-width: 700px;
     line-height: 1.5;
 }
 
 /* Footer */
+
 footer {
     text-align: center;
-    border-top: 1px solid #d6a56d;
+
     padding: 1rem;
+
+    border-top: 1px solid #d6a56d;
 }
 
-/* Responsive */
+/* Mobile */
+
 @media (max-width: 700px) {
 
-    .blog-layout {
+    .article {
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .book-details {
+
         order: -1;
-        text-align: right;
+
+        text-align: center;
+
         border-right: none;
+
         border-bottom: 1px solid #d6a56d;
+
         padding-right: 0;
+
         padding-bottom: 1rem;
-        margin-bottom: 1rem;
     }
 
     .book-content {
         text-align: center;
+        padding-left: 0;
     }
 
     .book-content img {
@@ -137,4 +165,4 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
     }
-}}
+}
