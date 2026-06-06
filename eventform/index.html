@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>Event Ticket Form</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <h1>Event Ticket Form</h1>
+
+        <form id="fsyForm">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required />
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+
+            <!-- User type -->
+            <div class="field">
+                <label for="userType">Type</label>
+                <select id="userType" name="userType" required>
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="availableDate">Event Date</label>
+                <input id="availableDate" name="availableDate" type="date" required />
+            </div>
+
+            <!-- Dynamic field -->
+            <div id="typeContainer" class="field full" hidden>
+                <label id="typeLabel" for="typeInput"></label>
+                <input id="typeInput" name="typeInput" type="text" />
+            </div>
+
+            <button class="full" type="submit">Get Ticket</button>
+        </form>
+
+        <!-- Output messages -->
+
+        <section id="output"></section>
+    </main>
+</body>
+
+</html>
