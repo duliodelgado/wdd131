@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Character Card | Swamp Beast Diplomat</title>
+
+    <meta name="description" content="Interactive character card built with JavaScript objects.">
+    <meta name="author" content="Dulio Delgado">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Swamp Beast Diplomat Character Card">
+    <meta property="og:description" content="An interactive JavaScript character card.">
+    <meta property="og:url" content="https://duliodelgado.io/wdd131/charactercard/">
+    <meta property="og:image" content="https://duliodelgado.io/wdd131/charactercard/images/swamp-beast.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Swamp Beast Diplomat Character Card">
+    <meta name="twitter:description" content="An interactive JavaScript character card.">
+    <meta name="twitter:image" content="https://duliodelgado.io/wdd131/charactercard/images/swamp-beast.jpg">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="card">
+
+            <img id="characterImage" class="image" src="" alt="Character image">
+
+            <h1 id="characterName" class="name"></h1>
+
+            <div class="stats">
+
+                <p>
+                    <strong>Class:</strong>
+                    <span id="characterClass"></span>
+                </p>
+
+                <p>
+                    <strong>Level:</strong>
+                    <span id="characterLevel"></span>
+                </p>
+
+                <p>
+                    <strong>Health:</strong>
+                    <span id="characterHealth"></span>
+                </p>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="attackBtn">
+                    Attack
+                </button>
+
+                <button id="levelBtn">
+                    Level Up
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
