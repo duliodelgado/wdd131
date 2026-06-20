@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+  font-family: Arial, sans-serif;
+  background: #eee;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 70px;
+}
+
+.brand h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  width: 100%;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-right: none;
+}
+
+.search button {
+  border: 1px solid #333;
+  background: white;
+  padding: 10px;
+}
+
+.search img {
+  width: 20px;
+}
+
+/* MAIN */
+.main {
+  margin-top: 20px;
+  display: flex;
+}
+
+/* CARD */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid #333;
+  padding: 1em;
+  border-radius: 8px;
+  background: white;
+  width: 100%;
+  max-width: none;
+}
+
+/* IMAGE */
+.card-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* CONTENT */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+/* TAG */
+.tag {
+  background: #ddd;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+
+/* TITLE */
+.card-content h2 {
+  color: #0a66c2;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social img {
+  width: 28px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 700px) {
+
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-image {
+    flex: 1 1 300px;
+  }
+
+  .card-content {
+    flex: 1 1 60ch;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description {
+    display: block;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 699px) {
+  .description {
+    display: none; /* requerimiento exacto */
+  }
+}
