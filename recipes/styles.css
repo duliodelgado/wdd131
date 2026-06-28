@@ -1,11 +1,11 @@
-/* Reset */
+/* reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base */
+/* base */
 body {
   max-width: 1200px;
   margin: auto;
@@ -18,14 +18,15 @@ img {
   max-width: 100%;
 }
 
-/* Header */
+/* header */
 .header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* centered */
   gap: 1em;
 }
 
+/* brand */
 .brand {
   display: flex;
   align-items: center;
@@ -41,10 +42,11 @@ img {
   font-size: 3rem;
 }
 
-/* Search */
+/* search */
 .search {
   display: flex;
   width: 100%;
+  max-width: 500px;
 }
 
 .search input {
@@ -52,25 +54,27 @@ img {
   padding: 10px;
   border: 1px solid #333;
   border-right: none;
+  border-radius: 8px 0 0 8px; /* rounded */
 }
 
 .search button {
   border: 1px solid #333;
   background: white;
   padding: 10px;
+  border-radius: 0 8px 8px 0; /* rounded */
 }
 
 .search img {
   width: 20px;
 }
 
-/* Main */
+/* main */
 .main {
   margin-top: 20px;
   display: flex;
 }
 
-/* Card */
+/* card */
 .card {
   display: flex;
   flex-direction: column;
@@ -80,23 +84,22 @@ img {
   border-radius: 8px;
   background: white;
   width: 100%;
-  max-width: none;
 }
 
-/* Image */
+/* image */
 .card-image img {
   width: 100%;
   border-radius: 4px;
 }
 
-/* Centent */
+/* content */
 .card-content {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
 
-/* Tag */
+/* tag */
 .tag {
   background: #ddd;
   padding: 3px 8px;
@@ -104,14 +107,14 @@ img {
   align-self: flex-start;
 }
 
-/* Title */
+/* title */
 .card-content h2 {
   color: #0a66c2;
   font-family: 'Amatic SC', cursive;
   font-size: 2rem;
 }
 
-/* Footer */
+/* footer */
 .footer {
   margin-top: 40px;
   display: flex;
@@ -120,6 +123,7 @@ img {
   gap: 15px;
 }
 
+/* social */
 .social {
   display: flex;
   gap: 10px;
@@ -129,7 +133,7 @@ img {
   width: 28px;
 }
 
-/* Desktop */
+/* desktop */
 @media screen and (min-width: 700px) {
 
   .card {
@@ -155,9 +159,23 @@ img {
   }
 }
 
-/* Mobile */
+/* mobile */
 @media screen and (max-width: 699px) {
+
   .description {
-    display: none; /* exact requirement */
+    display: none;
+  }
+
+  /* ensure icons first, attribution last */
+  .footer {
+    flex-direction: column;
+  }
+
+  .social {
+    order: 1;
+  }
+
+  .footer a {
+    order: 2;
   }
 }

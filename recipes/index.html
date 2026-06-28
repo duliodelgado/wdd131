@@ -4,51 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- seo -->
+    <meta name="description" content="Simple and delicious recipes you can easily make at home.">
+    <meta name="author" content="RecipeBook">
+
     <title>Recipe Book</title>
 
-    <!-- Open Graph -->
+    <!-- open graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Recipe Book">
     <meta property="og:description" content="Simple and delicious recipes.">
-    <meta property="og:url" content="#">
     <meta property="og:image" content="images/social-preview-image.png">
 
-    <!-- Twitter -->
+    <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Recipe Book">
     <meta name="twitter:description" content="Simple and delicious recipes.">
-    <meta name="twitter:image" content="images/pinterest_icon.png">
+    <meta name="twitter:image" content="images/social-preview-image.png">
 
-    <!-- Icons -->
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-crisp.jpg">
+    <!-- favicon (fixed path) -->
+    <link rel="icon" href="images/recipe-book.png">
 
-    <!-- Google Font -->
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header class="header">
+
         <div class="brand">
             <img src="images/recipe-book.png" alt="Recipe Book Logo">
             <h1>RecipeBook</h1>
         </div>
 
-        <div class="search">
+        <!-- nav added -->
+        <nav class="search">
             <input type="text" placeholder="Find a recipe">
             <button>
                 <img src="images/search.svg" alt="Search">
             </button>
-        </div>
+        </nav>
+
     </header>
+
+    <!-- required hr -->
+    <hr>
 
     <main class="main">
         <section class="card">
-
             <div class="card-image">
                 <img src="images/apple-crisp.jpg" alt="Apple Crisp dessert">
             </div>
@@ -59,11 +67,7 @@
                 <h2>Apple Crisp</h2>
 
                 <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">☆</span>
+                    ⭐⭐⭐⭐☆
                 </span>
 
                 <p class="description">
@@ -71,25 +75,24 @@
                     that's great served warm with vanilla ice cream.
                 </p>
             </div>
-
         </section>
     </main>
 
     <footer class="footer">
 
-        <a href="https://www.flaticon.com/free-icons/recipe">
-            Recipe icons created by Freepik - Flaticon
-        </a>
-
+        <!-- social first (important for mobile requirement) -->
         <div class="social">
-            <!-- Social media icons from https://www.iconfinder.com/AlfredoCreates -->
             <a href="#"><img src="images/instagram_icon.svg" alt="Instagram"></a>
             <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest"></a>
         </div>
 
-    </footer>
+        <a href="https://www.flaticon.com/free-icons/recipe">
+            Recipe icons created by Freepik - Flaticon
+        </a>
 
+    </footer>
+    <script type="module" src="recipes.js"></script>
 </body>
 
 </html>
