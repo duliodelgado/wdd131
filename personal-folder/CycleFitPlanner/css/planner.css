@@ -1,0 +1,263 @@
+/* Planner Container */
+
+.planner-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Form */
+
+#planForm {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 2rem;
+}
+
+#planForm label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#planForm input,
+#planForm select {
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+
+#planForm button {
+    margin-top: 1.5rem;
+
+    width: 100%;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 1rem;
+
+    background-color: var(--secondary);
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#planForm button:hover {
+    background-color: var(--primary);
+}
+
+/* Results */
+
+#results {
+    margin-top: 2rem;
+}
+
+.results-card {
+    background-color: #ffffff;
+
+    padding: 1.5rem;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0, 0, 0, 0.1);
+}
+
+.results-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.metric {
+    margin-bottom: 0.75rem;
+
+    padding: 0.75rem;
+
+    background-color: #f4f4f4;
+
+    border-left:
+        4px solid
+        var(--secondary);
+}
+
+/* Saved Plans */
+
+#savedPlans {
+    margin-top: 2rem;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.plan-card {
+    background-color: white;
+
+    padding: 1.5rem;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.plan-card p {
+    margin-bottom: 0.5rem;
+}
+
+/* PLan actions */
+
+.plan-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    border-radius: 5px;
+
+    padding:
+        0.6rem
+        1rem;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+.edit-btn {
+    background-color: var(--secondary);
+}
+
+.edit-btn:hover {
+    opacity: 0.9;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    opacity: 0.9;
+}
+
+/* Statistics */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background-color: white;
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--secondary);
+}
+
+/* Filter options */
+
+.filter-bar {
+    margin: 2rem 0;
+}
+
+.filter-bar select {
+    width: 100%;
+    padding: 0.75rem;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Notifications */
+
+.notification {
+    margin-top: 1rem;
+
+    padding: 1rem;
+
+    background-color: var(--secondary);
+    color: white;
+
+    border-radius: 5px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    #savedPlans {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    #planForm button {
+        width: auto;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+    #savedPlans {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    #planForm {
+        padding: 2.5rem;
+    }
+}

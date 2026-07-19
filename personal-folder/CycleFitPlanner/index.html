@@ -1,0 +1,186 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="CycleFit Planner helps cyclists create personalized training plans.">
+
+    <meta name="author" content="Dulio Delgado">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="CycleFit Planner">
+
+    <meta property="og:description" content="Create personalized cycling training plans.">
+
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/cyclefit-planner">
+
+    <!-- Twitter Card -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="CycleFit Planner">
+
+    <meta name="twitter:description" content="Create personalized cycling training plans.">
+
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="stylesheet" href="css/components.css">
+
+    <link rel="stylesheet" href="css/planner.css">
+
+    <title>
+        CycleFit Planner | Home
+    </title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo-container">
+
+                <img src="images/logo.png" alt="CycleFit Planner Logo" class="logo">
+
+                <h1>CycleFit Planner</h1>
+
+            </div>
+
+            <button id="menuBtn" class="menu-button" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <button id="darkModeBtn" class="dark-mode-button">
+                🌙 Dark Mode
+            </button>
+
+            <nav id="navigation" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="planner.html">Planner</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <h2>
+                    Train Smarter. Ride Stronger.
+                </h2>
+
+                <p>
+                    Generate personalized cycling plans
+                    based on your fitness level and goals.
+                </p>
+
+                <a href="planner.html" class="btn-primary">
+                    Create My Plan
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="features container">
+
+            <article class="card">
+
+                <h3>
+                    BMI Analysis
+                </h3>
+
+                <p>
+                    Calculate and monitor your body mass index.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h3>
+                    Calories Burned
+                </h3>
+
+                <p>
+                    Estimate calories consumed during training.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h3>
+                    Training Plans
+                </h3>
+
+                <p>
+                    Receive customized cycling recommendations.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="container">
+
+            <h2>
+                Dashboard
+            </h2>
+
+            <div id="dashboard"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 CycleFit Planner
+            </p>
+
+            <p>
+                Developed by Dulio Delgado
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/calculations.js"></script>
+
+    <script src="scripts/storage.js"></script>
+
+    <script src="scripts/ui.js"></script>
+
+    <script src="scripts/planner.js"></script>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

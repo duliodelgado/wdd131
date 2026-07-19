@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Create personalized cycling training plans with CycleFit Planner.">
+
+    <meta name="author" content="Dulio Delgado">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="CycleFit Planner | Planner">
+
+    <meta property="og:description" content="Generate personalized cycling training plans.">
+
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/cyclefit-planner/planner.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="CycleFit Planner | Planner">
+
+    <meta name="twitter:description" content="Generate personalized cycling training plans.">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="stylesheet" href="css/components.css">
+
+    <link rel="stylesheet" href="css/planner.css">
+
+    <title>CycleFit Planner | Planner</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Logo y título -->
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="CycleFit Planner Logo" class="logo">
+                    <h1>CycleFit Planner</h1>
+                </a>
+            </div>
+
+            <!-- Botones -->
+            <div class="header-buttons">
+                <button id="menuBtn" class="menu-button" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <button id="darkModeBtn" class="dark-mode-button" aria-label="Toggle dark mode">
+                    🌙 Dark Mode
+                </button>
+            </div>
+
+            <!-- Navegación -->
+            <nav id="navigation" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="planner.html">Planner</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main class="container planner-container">
+
+        <section class="page-banner">
+
+            <h2>
+                Create Your Personalized Cycling Plan
+            </h2>
+
+            <p>
+                Generate a custom cycling plan
+                based on your goals.
+            </p>
+
+        </section>
+
+        <form id="planForm">
+
+            <label for="name">
+                Name
+            </label>
+
+            <input type="text" id="name" required>
+
+            <label for="weight">
+                Weight (kg)
+            </label>
+
+            <input type="number" id="weight" min="30" max="250" required>
+
+            <label for="height">
+                Height (cm)
+            </label>
+
+            <input type="number" id="height" min="100" max="250" required>
+
+            <label for="minutes">
+                Weekly Ride Minutes
+            </label>
+
+            <input type="number" id="minutes" min="30" required>
+
+            <label for="goal">
+                Cycling Goal
+            </label>
+
+            <select id="goal">
+
+                <option value="Endurance">
+                    Endurance
+                </option>
+
+                <option value="Weight Loss">
+                    Weight Loss
+                </option>
+
+                <option value="Performance">
+                    Performance
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Generate Training Plan
+            </button>
+
+        </form>
+
+        <section id="results"></section>
+
+        <section class="stats-section">
+
+            <h2>
+                Training Statistics
+            </h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>Total Plans</h3>
+                    <p id="totalPlans" class="stat-value">
+                        0
+                    </p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Average BMI</h3>
+                    <p id="averageBMI" class="stat-value">
+                        0
+                    </p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Calories</h3>
+                    <p id="totalCalories" class="stat-value">
+                        0
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="saved-plans-section">
+
+            <h2>
+                Saved Plans
+            </h2>
+
+            <div id="savedPlans"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 CycleFit Planner
+            </p>
+
+            <p>
+                Developed by Dulio Delgado
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="scripts/storage.js"></script>
+
+    <script src="scripts/ui.js"></script>
+
+    <script src="scripts/calculations.js"></script>
+
+    <script src="scripts/planner.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

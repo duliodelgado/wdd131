@@ -1,140 +1,162 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Site Plan</title>
-    <link type="text/css" rel="stylesheet" href="site-plan.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CycleFit Planner | Site Plan</title>
+  <link rel="stylesheet" href="styles/site-plan.css">
 </head>
 
 <body>
-    <header>
-        <h1>CycleFit Planner Project Plan</h1>
-        <h2>Dulio Delgado</h2>
-        <h2>WDD 131</h2>
-        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
-    </header>
-    <main>
+  <header>
+    <h1>CycleFit Planner - Site Plan</h1>
+    <h2>Dulio Delgado</h2>
+    <h3>WDD 131 Final Project Planning</h3>
+  </header>
 
-        <hr />
-        <h2>Overview</h2>
-        <h3>Purpose</h3>
-        <p>CycleFit Planner is a web application that helps cyclists create a personalized cycling training plan based
-            on their personal information, fitness goals, and riding preferences. The application estimates calories
-            burned, weekly training volume, and expected progress while providing recommendations to improve cycling
-            performance safely.</p>
-        <!-- change this -->
+  <nav>
+    <a href="#purpose">Purpose</a>
+    <a href="#audience">Audience</a>
+    <a href="#dynamic">Dynamic</a>
+    <a href="#branding">Branding</a>
+    <a href="#content">Content</a>
+    <a href="#pseudo">Pseudocode</a>
+    <a href="#wireframes">Wireframes</a>
+  </nav>
 
-        <h3>Audience</h3>
-        <p>The intended audience is recreational and amateur cyclists between the ages of 18 and 65 who want a simple
-            way to organize their training without using expensive fitness applications. It is also useful for beginners
-            who are learning how to plan their cycling workouts.</p>
-        <!-- change this -->
+  <main>
+    <section id="purpose">
+      <h2>Purpose</h2>
+      <p>CycleFit Planner is a web application that helps recreational cyclists create personalized cycling training
+        plans based on their fitness level, goals, and riding preferences. The application calculates BMI, estimates
+        calories burned, recommends weekly training volume, and stores personalized plans using Local Storage.</p>
+    </section>
 
-        <h3>Dynamic elements</h3>
-        <p>
+    <section id="audience">
+      <h2>Audience</h2>
+      <p>The intended audience is recreational and amateur cyclists between 18 and 65 years old who want a free,
+        easy-to-use tool for organizing their cycling workouts and monitoring their progress.</p>
+    </section>
 
-            The application will use JavaScript to create an interactive experience
+    <section id="dynamic">
+      <h2>Dynamic Elements</h2>
+      <ul>
+        <li>Interactive form with validation</li>
+        <li>BMI calculation</li>
+        <li>Calories burned estimation</li>
+        <li>Personalized weekly training plan</li>
+        <li>Hydration and nutrition recommendations</li>
+        <li>Automatic DOM updates</li>
+        <li>Save, edit and delete plans with Local Storage</li>
+      </ul>
+    </section>
 
-            for cyclists. Users will enter their personal information, choose a
+    <section id="branding">
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="images/logo.png" alt=" CycleFit Planner logo" width="220">
+      <p><strong>Heading Font:</strong> Poppins</p>
+      <p><strong>Body Font:</strong> Open Sans</p>
 
-            cycling goal, and receive a customized training plan.
+      <table class="colors">
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent</th>
+          <th>Background</th>
+        </tr>
+        <tr>
+          <td class="primary">#1D3557</td>
+          <td class="secondary">#2A9D8F</td>
+          <td class="accent1">#F4A261</td>
+          <td class="accent2">#F8F9FA</td>
+        </tr>
+      </table>
+    </section>
 
-        </p>
+    <section id="content">
+      <h2>Content</h2>
+      <h3>Home Page</h3>
+      <ul>
+        <li>Welcome banner</li>
+        <li>Benefits</li>
+        <li>Create Plan button</li>
+        <li>Quick statistics</li>
+      </ul>
+      <h3>Create Plan</h3>
+      <ul>
+        <li>Name, age, height, weight</li>
+        <li>Cycling goal</li>
+        <li>Ride duration</li>
+        <li>Weekly schedule</li>
+      </ul>
+      <h3>Saved Plans</h3>
+      <ul>
+        <li>View plans</li>
+        <li>Edit</li>
+        <li>Delete</li>
+      </ul>
+      <h3>About</h3>
+      <p>Information about the application and technologies used.</p>
+    </section>
 
-        <ul>
+    <section id="pseudo">
+      <h2>Pseudocode</h2>
+      <pre>
+START
+Load saved plans
+IF plans exist
+ Display plans
+ENDIF
 
-            <li>Collect cyclist information through an interactive form.</li>
+User submits form
+ Validate inputs
+ IF invalid
+   Show error
+ ELSE
+   Calculate BMI
+   Calculate calories
+   Generate training plan
+   Display recommendations
+   Save to Local Storage
+ ENDIF
 
-            <li>Validate required fields before generating a plan.</li>
+User edits or deletes plan
+ Update Local Storage
+ Refresh page
+END
+</pre>
+    </section>
 
-            <li>Calculate Body Mass Index (BMI).</li>
-
-            <li>Estimate calories burned based on weight, ride duration, and average speed.</li>
-
-            <li>Generate a personalized cycling training plan based on the selected goal.</li>
-
-            <li>Display recommended weekly distance and riding schedule.</li>
-
-            <li>Show hydration and nutrition recommendations.</li>
-
-            <li>Allow users to save their cycling plan using Local Storage.</li>
-
-            <li>Allow users to edit or delete saved plans.</li>
-
-            <li>Update the results instantly whenever the user changes the input values.</li>
-
-        </ul>
-        <!-- change this -->
-
-        <hr />
-        <h2>Branding</h2>
-        <h3>Website Logo</h3>
-        <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
-        <img src="#" alt="Logo image" />
-        <hr />
-        <h2>Style Guide</h2>
-
-        <h3>Color Palette</h3>
-        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
-
-        <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
-        Palette URL:
-        <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
-            target="_blank">https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a>
-
-        <table class="colors">
-            <tbody>
-                <tr>
-                    <th>Primary</th>
-                    <th>Secondary</th>
-                    <th>Accent 1</th>
-                    <th>Accent 2</th>
-                </tr>
-                <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
-                <tr>
-                    <td class="primary">[#396E94]</td>
-                    <td class="secondary">[#E7C24F]</td>
-                    <td class="accent1">[#A43312]</td>
-                    <td class="accent2"></td>
-                </tr>
-            </tbody>
-        </table>
-
-
-
-        <h3>Pseudocode for your project</h3>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-        </p>
-
-        <h3>Wireframes</h3>
-        <p>
-            Create wireframes for your project page(s). One for each page and list them
-            here.
-        </p>
-
-        <h3>Landing page</h3>
-        <p>
-            [Any additional details about home that the wireframe does not make
-            clear]
-        </p>
-        <img src="#" alt="home page wireframe" />
-
-        <h3>[Page 2 if needed]</h3>
-        <p>
-            [Any additional details about page 2 that the wireframe does not make
-            clear]
-        </p>
-        <img src="#" alt="page 2 wireframe" />
-    </main>
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <h3>Home</h3>
+      <pre>
++-------------------------+
+| Logo   Navigation       |
++-------------------------+
+| Hero Image              |
+| Create Plan Button      |
++-------------------------+
+| Features                |
++-------------------------+
+</pre>
+      <h3>Create Plan</h3>
+      <pre>
++-------------------------+
+| Form                    |
+| Name                    |
+| Age                     |
+| Weight                  |
+| Goal                    |
+| Generate Plan           |
++-------------------------+
+| Results                 |
++-------------------------+
+</pre>
+    </section>
+  </main>
 </body>
 
 </html>
